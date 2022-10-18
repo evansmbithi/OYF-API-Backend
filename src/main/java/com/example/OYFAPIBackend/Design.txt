@@ -1,0 +1,17 @@
+API DESIGN
+
+GET localhost:8080/computeTax?gross=150000
+                OR
+GET localhost:8080/gross-salary/150000
+
+{
+    'gross-amount': 150000,
+    'net-salary': 110000,
+    'nssf': 200,
+    'taxable-income': 24000,
+    'tax-before-relief': 2500,
+    'personal-relief': 500,
+    'health-insurance': 10000,
+    'paye': 22500,
+    'nhif': 1000
+}
