@@ -1,20 +1,22 @@
 package com.example.OYFAPIBackend;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/api/v1")
 public class TaxCalculatorController {
 
     private static final String PATTERN = "^-?+\\d+\\.?+\\d*$";
 
     @GetMapping("/computeTax")
     public TaxCalculator taxCalculator(
-            @RequestParam(value = "gross")
+            @RequestParam(value = "gross", defaultValue = "150000")
             String grossInput
     ){
-//        localhost:8080/computeTax?gross=150000
+//        localhost:8080/api/v1/computeTax?gross=150000
 
         String grossAmount;
         String netSalary;

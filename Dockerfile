@@ -13,5 +13,5 @@ COPY src ./src
 CMD ["./mvnw", "spring-boot:run"]
 
 # docker build --platform linux/amd64 -t oyf-api-backend .
-# docker run -p 3307:8080 -t oyf-api-backend
+# docker run --rm -p 3307:8080 --name group7-api -t oyf-api-backend
 # docker push username/oyf-api-backend
