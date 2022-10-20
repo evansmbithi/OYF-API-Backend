@@ -14,7 +14,7 @@
 	<name>OYF-API-Backend</name>
 	<description>An API that performs simple tax calculations and generates the response in JSON format.</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
